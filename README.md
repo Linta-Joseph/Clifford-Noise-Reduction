@@ -20,11 +20,11 @@ Builds the two primitives CliNR rests on: state teleportation, then gate telepor
 
 Adds the one missing ingredient to gate teleportation — verification of the resource state — to arrive at CliNR. The protocol is demonstrated on a three-qubit Clifford circuit, where it does not yet outperform a direct implementation. This establishes the baseline — the verification overhead only pays off on larger circuits — before the later notebooks show it succeeding.
 
-### 3. Reaching Breakeven with CZNR — `3_Reaching Breakeven with CZNR.ipynb`
+### 3. Reaching_Breakeven_with_CZNR — `3_Reaching Breakeven with CZNR.ipynb`
 
 Introduces CZNR, the specialization of CliNR to circuits of controlled-Z gates, which uses a graph state as its resource. The all-pairs CZ circuit on ten qubits is run in simulation and compared against a direct implementation, reaching breakeven. Two families of verification stabilizers and several verification lengths are compared, followed by a sweep over the noise rate.
 
-### 4. CZNR on IonQ Hardware — `4_CZNR_on_IonQ_Hardware.ipynb`
+### 4. CZNR_on_IonQ_Hardware — `4_CZNR_on_IonQ_Hardware.ipynb`
 
 Runs the CZNR circuit on IonQ Forte through qBraid. Because Forte 1 trapped-ion hardware does not support mid-circuit measurement, the corrections and restarts are applied in classical post-processing rather than by in-circuit feedforward. The notebook validates the full pipeline on a free simulator, submits to hardware, and analyzes the results with a progressive stabilizer-ignoring study that shows the verification removing genuine errors.
 
