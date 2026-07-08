@@ -43,12 +43,8 @@ All packages are pre-installed in the Launch-on-qBraid environment. Each noteboo
 - Hardware jobs are queued and may take from minutes to hours. You do not need to keep the notebook open — the job continues on the backend, and its results can be retrieved later from the qBraid **Jobs** panel or by job ID. When re-running a notebook to retrieve and analyze a previous job, make sure to set `RUN_ON_HARDWARE = False` so a new job isn't accidentally submitted.
 
 ## Notes and troubleshooting
+- Import or kernel errors immediately after launch usually mean the environment is still installing. Wait for it to finish, then select the tutorial's kernel from the kernel menu.
+- Hardware availabilty and queuing. Check the hardware device's status in the Devices panel on the right of qBraid Lab before submitting. The job will be added to the Queue until the device's next available time window. If the device status shows `unavailable`, the job submission may throw an error - try again when the device is available. 
 
-- **Import or kernel errors immediately after launch** usually mean the environment is still installing. Wait for it to finish, then select the tutorial's kernel from the kernel menu.
-- **Hardware cost and queuing.** Confirm the current device pricing on qBraid before submitting, keep the shot count modest for a first run, and expect a job to queue for some time before it executes.
 
-## References
 
-[1] N. Delfosse and E. Tham, *Clifford Noise Reduction*, arXiv:2407.06583 (2024).
-
-[2] E. Tham and N. Delfosse, *Optimized Clifford Noise Reduction: Theory, Simulations and Experiments*, Quantum **9**, 1829 (2025). arXiv:2504.13356.
